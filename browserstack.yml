@@ -1,10 +1,26 @@
 userName: chiranjeevibs_TNc4VW
 accessKey: yu3uJ5TxVX8mnTY1idmz
+framework: python
 platforms:
   - os: Windows
-    osVersion: 10
+    osVersion: 11
     browserName: Chrome
-    browserVersion: 120.0
-projectName: BrowserStack Self-Authoring
-sessionName: First Self-Authoring Test
-aiAuthoring: true
+    browserVersion: latest
+  - os: OS X
+    osVersion: Sonoma
+    browserName: Chrome
+    browserVersion: latest
+  - osVersion: 17
+    deviceName: iPhone 15
+    browserName: safari
+  - osVersion: 14.0
+    deviceName: Samsung Galaxy S24
+    browserName: chrome
+browserstackLocal: false
+buildName: browserstack-build-1
+projectName: BrowserStack Automation
+debug: true
+networkLogs: true
+consoleLogs: info
+bstack:options:
+  aiAuthoring: true
